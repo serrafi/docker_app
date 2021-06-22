@@ -16,7 +16,7 @@ node {
     sh 'docker push ibrahimserrafi/img1:latest'
     }
     stage('run container') {
-        sh 'docker run -t -d ibrahimserrafi/img1:latest'
+        sh 'docker run -t -d --name alcontainer alpine'
     }
     
 }
